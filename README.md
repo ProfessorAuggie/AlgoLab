@@ -1,58 +1,47 @@
-# AlgoLab — Interactive DSA Learning Platform
+# Algo Lab — Step-by-Step Data Structures & Algorithms
 
-A responsive, client-side learning app for Data Structures and Algorithms, built with React and Vite. The interface is inspired by modern bite-sized learning platforms and is an independent implementation.
+Learn data structures and algorithms in 86 short lessons. Each one is a step-by-step walkthrough with an isometric diagram that moves as you go.
 
 ## Features
 
-- 15 topic areas spanning foundations, data structures, and algorithms
-- Guided lesson lists with examples, key takeaways, and complexity snapshots
-- Interactive Big O growth-rate chart
-- Sorting visualizer with shuffle, reset, and animated bubble sort
-- Practice quiz with explanations and a final score
-- Lesson completion tracking and course progress
-- Saved lessons and personal notes
-- Searchable course navigation
-- Dark and light themes
-- Responsive desktop and mobile layouts
-- Progress, notes, saved lessons, and theme persist in browser `localStorage`
+- **86 Interactive Lessons across 14 Chapters**:
+  - Basics & Foundations
+  - Arrays & Strings
+  - Linked Lists
+  - Stacks & Queues
+  - Hash Tables
+  - Trees & Binary Search Trees
+  - Heaps & Priority Queues
+  - Graphs & Traversal (BFS / DFS)
+  - Sorting & Searching
+  - Recursion & Backtracking
+  - Dynamic Programming
+  - Greedy Algorithms
+- **Dynamic Isometric Step-by-Step Visualizations**: Visual walkthroughs that update interactively at every step.
+- **Multilingual Support**: Built-in localization support across multiple languages.
+- **Dark and Light Theme**: Respects system preferences and manual toggles.
+- **Progress Tracking**: Tracks your completed lessons and learning progress in `localStorage`.
+- **Zero-Dependency Quick Start**: Runs instantly with Node.js built-in server, with no external package downloads required.
 
-## Requirements
-
-- Node.js 18.0 or newer
-- npm
-
-## Run locally
+## Quick Start (Run Locally)
 
 ```bash
-npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite (usually http://localhost:5173).
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## Production build
+## Build for Production
 
 ```bash
 npm run build
-npm run preview
 ```
 
-The production site is generated in `dist/` and can be deployed to Vercel, Netlify, or any static hosting provider. A `vercel.json` file is included for SPA route fallback.
+The production output is generated in the `dist/` directory, ready to deploy to Vercel, Netlify, GitHub Pages, or any static hosting service.
 
-## Project structure
+## Deploy to Vercel
 
-```text
-algolab/
-├── index.html
-├── package.json
-├── vite.config.js
-├── vercel.json
-├── README.md
-└── src/
-    ├── main.jsx
-    └── styles.css
-```
-
-## Notes
-
-This is a complete frontend starter, not a hosted SaaS product. It does not currently include accounts, cloud sync, a server database, or remote code execution. User progress is stored locally in the browser. Code examples are educational snippets and are not executed by the app.
+A `vercel.json` file is included for SPA route fallback. You can import this repository directly into Vercel:
+- **Framework Preset**: Other
+- **Build Command**: `npm run build`
+- **Output Directory**: `dist`
