@@ -40,3 +40,4 @@ copyRecursive(path.join(rootDir, 'assets'), path.join(distDir, 'assets'));
 console.log('Copied assets/ -> dist/assets/');
 
 console.log('Build completed successfully!');
+
